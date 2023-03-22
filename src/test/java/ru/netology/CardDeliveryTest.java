@@ -1,22 +1,13 @@
 package ru.netology;
 
 import com.codeborne.selenide.Configuration;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import java.time.Duration;
 import java.time.LocalDate;
-
-import static com.codeborne.selenide.Condition.appear;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class CardDeliveryTest {
-
-    @BeforeEach
-    void setUpDate(){
-        LocalDate date = LocalDate.now();
-
-    }
 
     @Test
     void shouldCheckFormCompletion(){
