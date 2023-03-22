@@ -1,4 +1,4 @@
-image: Visual Studio 2019  # образ для сборки
+image: Ubuntu  # образ для сборки
 
 stack: jdk 11  # версия JDK
 
@@ -10,7 +10,7 @@ build: off  # будем использовать свой скрипт сбор
 
 install:
   # запускаем SUT (& означает, что в фоновом режиме не блокируем терминал для запуска тестов)
-  - app-card-delivery.jar &
+  - java -jar ./artifacts/app-card-delivery.jar &
 
 build_script:
   - chmod +x gradlew
